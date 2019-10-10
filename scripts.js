@@ -2,6 +2,7 @@ $(document).ready(function () {
 	$('html, body').animate({
 		scrollTop: 0
 	});
+	$('body').css('visibility', 'visible');
 })
 
 $('.btn-main').click(function () {
