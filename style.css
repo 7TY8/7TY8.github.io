@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kelly+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+* {
+	outline: none !important;
+}
+
+body {
+	background: #34495e;;
+	color: #fff;
+	font-size: 20px;
+	overflow: hidden;
+}
+
+.main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h3, .btn-view {
+	font-family: 'Press Start 2P', cursive;	
+}
+
+.btn-view {
+	position: relative;
+	background: transparent;
+	border: none;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+	padding: 10px 25px;
+	color: #fff;
+	overflow: hidden;
+	transition: .2s linear;
+}
+
+.btn-view:hover {
+	background: #fff;
+	color: #34495e;
+	box-shadow: 0 40px 70px rgba(0, 0, 0, .7)
+}
+
+.btn-view:hover span:nth-child(1) {
+	background: linear-gradient(to right, #fff, var(--dark));
+}
+
+.btn-view:hover span:nth-child(2) {
+	background: linear-gradient(to bottom, #fff, var(--dark));
+}
+
+.btn-view:hover span:nth-child(3) {
+	background: linear-gradient(to left, #fff, var(--dark));
+}
+
+.btn-view:hover span:nth-child(4) {
+	background: linear-gradient(to top, #fff, var(--dark));
+}
+
+.btn-view span:nth-child(1) {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: linear-gradient(to right, #34495e, #fff);
+	left: 0;
+	top: 0;
+	animation: move1 2s linear infinite;
+}
+
+.btn-view span:nth-child(2) {
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	background: linear-gradient(to bottom, #34495e, #fff);
+	right: 0;
+	top: 0;
+	animation: move2 2s linear infinite;
+	animation-delay: 1s;
+}
+
+.btn-view span:nth-child(3) {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: linear-gradient(to left, #34495e, #fff);
+	right: 0;
+	bottom: 0;
+	animation: move3 2s linear infinite;
+}
+
+.btn-view span:nth-child(4) {
+	position: absolute;
+	height: 100%;
+	width: 2px;
+	background: linear-gradient(to top, #34495e, #fff);
+	left: 0;
+	bottom: 0;
+	animation: move4 2s linear infinite;
+	animation-delay: 1s;
+}
+
+.lorems {
+	position: absolute;
+	top: 100%;
+}
+
+.lorem {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+hr {
+	background: #fff;
+	height: 2px;
+}
+
+span {
+	display: block;
+}
+
+.l-1 {
+	font-family: 'Press Start 2P', cursive;
+}
+
+.l-2 {
+	font-family: 'Russo One', sans-serif;
+}
+
+.l-3 {
+	font-family: 'Kelly Slab', cursive;
+}
+
+.l-4 {
+	font-family: 'Play', sans-serif;
+}
+
+.l-5 {
+    font-family: 'Poiret One', cursive;
+}
+
+.l-6 {
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.l-7 {
+	font-family: 'PT Mono', monospace;
+}
+
+.l-8 {
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.l-9 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.l-10 {
+	font-family: 'Neucha', cursive;
+}
+
+@keyframes move1 {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@keyframes move2 {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes move3 {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes move4 {
+	0% {
+		transform: translateY(100%);
+	}
+
+	100% {
+		transform: translateY(-100%);
+	}
+}
+
+.fixed {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	transition: .5s ease;
+	opacity: 0;
+	background: #34495e;
+}
+
+n {
+	margin: 0;
+	padding: 0;
+}
